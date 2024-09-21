@@ -1,0 +1,8 @@
+name: InitiaEssentialsSF
+version: '1.0.2'
+main: Xeocas.InitiaEssentialsSF
+depend: [Slimefun]
+api-version: '1.20'
+load: STARTUP
+authors: [ Xeocas ]
+description: Slimefun Essential Plugin For Initia!
