@@ -1,4 +1,6 @@
-Xeocas\Machine\BasaltMachine.class
 Xeocas\Machine\BlazeRodMachine.class
-Xeocas\InitiaEssentialsSF.class
 Xeocas\Machine\EndRodMachine.class
+Xeocas\Machine\GunpowderMachine.class
+Xeocas\Machine\BasaltMachine.class
+Xeocas\InitiaEssentialsSF.class
+Xeocas\Machine\WitherSkullMachine.class

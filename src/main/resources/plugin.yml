@@ -1,5 +1,5 @@
 name: InitiaEssentialsSF
-version: '1.0.2'
+version: '1.0.3'
 main: Xeocas.InitiaEssentialsSF
 depend: [Slimefun]
 api-version: '1.20'

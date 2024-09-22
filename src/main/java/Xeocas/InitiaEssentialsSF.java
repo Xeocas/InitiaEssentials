@@ -1,8 +1,6 @@
 package Xeocas;
 
-import Xeocas.Machine.BasaltMachine;
-import Xeocas.Machine.BlazeRodMachine;
-import Xeocas.Machine.EndRodMachine;
+import Xeocas.Machine.*;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -28,12 +26,16 @@ public final class InitiaEssentialsSF extends JavaPlugin implements SlimefunAddo
 				SlimefunItemStack basaltMachineStack = new SlimefunItemStack("BASALT_MACHINE", Material.FURNACE, "&7Basalt Machine");
 				SlimefunItemStack blazerodMachineStack = new SlimefunItemStack("BLAZEROD_MACHINE", Material.BLAST_FURNACE, "&7BlazeRod Machine");
 				SlimefunItemStack endrodMachineStack = new SlimefunItemStack("ENDROD_MACHINE", Material.BLAST_FURNACE, "&7EndRod Machine");
+				SlimefunItemStack gunpowderMachineStack = new SlimefunItemStack("GUNPOWDER_MACHINE", Material.BLAST_FURNACE, "&7Gunpowder Machine");
+				SlimefunItemStack witherskullMachineStack = new SlimefunItemStack("WITHERSKULL_MACHINE", Material.BLAST_FURNACE, "&7Witherskull Machine");
 
 
 				// Create the ArtilleryAmmoMachine instance
 				BasaltMachine basaltMachine = new BasaltMachine(eMachineGroup, basaltMachineStack, RecipeType.ENHANCED_CRAFTING_TABLE, this);
 				BlazeRodMachine blazeRodMachine = new BlazeRodMachine(eMachineGroup, blazerodMachineStack, RecipeType.ENHANCED_CRAFTING_TABLE, this);
 				EndRodMachine endRodMachine = new EndRodMachine(eMachineGroup, endrodMachineStack, RecipeType.ENHANCED_CRAFTING_TABLE, this);
+				GunpowderMachine gunpowderMachine = new GunpowderMachine(eMachineGroup, gunpowderMachineStack, RecipeType.ENHANCED_CRAFTING_TABLE, this);
+				WitherSkullMachine witherSkullMachine = new WitherSkullMachine(eMachineGroup, witherskullMachineStack, RecipeType.ENHANCED_CRAFTING_TABLE, this);
 
 
 
@@ -41,6 +43,8 @@ public final class InitiaEssentialsSF extends JavaPlugin implements SlimefunAddo
 				basaltMachine.register(this);
 				blazeRodMachine.register(this);
 				endRodMachine.register(this);
+				gunpowderMachine.register(this);
+				witherSkullMachine.register(this);
 
 			} catch (Exception e) {
 				e.printStackTrace(); // Print the error stack trace for debugging
